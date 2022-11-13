@@ -1,0 +1,51 @@
+@use "./includes/colors";
+@use "./includes/fonts";
+@use "./includes/spacing";
+@use "./modules/navbar";
+@use "./modules/main";
+@use "./modules/footer";
+
+body {
+  background: colors.$gradient1;
+  color: colors.$color6;
+  font: fonts.$font-stack;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font: fonts.$font-stack2;
+    text-shadow: fonts.$font-popup !important;
+  }
+
+  h1 {
+    font-size: 400%;
+  }
+
+  h2 {
+    font-size: 300%;
+  }
+
+  h3 {
+    font-size: 200%;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+  }
+
+  .container:first-of-type {
+    background-image: url("/img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left: 1px solid colors.$color4;
+    border-right: 1px solid colors.$color4;
+    min-height: 100%;
+    padding: 0 !important;
+  }
+}

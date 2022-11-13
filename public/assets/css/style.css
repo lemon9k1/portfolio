@@ -1,0 +1,130 @@
+.navbar {
+  background-color: transparent;
+  background-image: url("/img/navbar-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.01);
+  height: 75px;
+  font: 100% "Oswald", sans-serif;
+  padding: 0 !important;
+  position: relative;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.navbar a {
+  color: rgba(255, 255, 255, 0.1) !important;
+  text-transform: uppercase;
+}
+.navbar .navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.navbar .navbar-nav .nav-item:first-of-type {
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+}
+.navbar .navbar-nav .nav-item::before {
+  background: rgba(0, 0, 0, 0.01);
+  bottom: 0;
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 2px;
+}
+.navbar .navbar-nav .nav-item::after {
+  background: rgba(0, 0, 0, 0.01);
+  bottom: 0;
+  content: "";
+  position: absolute;
+  right: 1px;
+  top: 0;
+  width: 2px;
+}
+.navbar .navbar-nav .nav-item {
+  background-color: transparent;
+  border-right: 2px solid rgba(0, 0, 0, 0.25);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+.navbar .navbar-nav li {
+  float: left;
+}
+
+main {
+  padding: 16px;
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  overflow: auto;
+}
+main .heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: inherit;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+footer {
+  background-color: transparent;
+  background-image: url("/img/navbar-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  height: 75px;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 50% !important;
+}
+footer .footing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+body {
+  background: radial-gradient(circle, rgb(68, 68, 68) 0%, rgb(0, 0, 0) 100%);
+  color: white;
+  font: 32px "Poppins", sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font: 100% "Oswald", sans-serif;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15) !important;
+}
+body h1 {
+  font-size: 400%;
+}
+body h2 {
+  font-size: 300%;
+}
+body h3 {
+  font-size: 200%;
+}
+body h4,
+body h5,
+body h6 {
+  font-size: 100%;
+}
+body .container:first-of-type {
+  background-image: url("/img/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  min-height: 100%;
+  padding: 0 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

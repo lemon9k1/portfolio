@@ -1,0 +1,65 @@
+@use "../includes/colors";
+@use "../includes/fonts";
+@use "../includes/spacing";
+
+.navbar {
+  background-color: transparent;
+  background-image: url("/img/navbar-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  border-bottom: 1px solid colors.$color5;
+  height: 75px;
+  font: fonts.$font-stack2;
+  padding: 0 !important;
+  position: relative;
+  text-shadow: fonts.$font-popup;
+
+  a {
+    color: colors.$color1 !important;
+    text-transform: uppercase;
+  }
+
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: relative;
+
+    .nav-item:first-of-type {
+      border-left: 2px solid colors.$color3;
+    }
+
+    .nav-item::before {
+      background: colors.$color5;
+      bottom: 0;
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 0;
+      width: 2px;
+    }
+
+    .nav-item::after {
+      background: colors.$color5;
+      bottom: 0;
+      content: "";
+      position: absolute;
+      right: 1px;
+      top: 0;
+      width: 2px;
+    }
+
+    .nav-item {
+      background-color: transparent;
+      border-right: 2px solid colors.$color3;
+      border-left: 2px solid colors.$color1;
+      height: 100%;
+    }
+
+    li {
+      float: left;
+    }
+  }
+}
